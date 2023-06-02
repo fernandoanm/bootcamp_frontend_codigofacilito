@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>e/COCTAiL</title>
+        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/fontello.css">
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="grid-header">
+                <div class="header-fondo"></div>
+                        <div class="header-contenido">
+                            <img src="./img/logo.png" alt="e/COCKTAiL_logo" class="logo">
+                            <nav class="navbar" id="navbar">
+                                <ul>
+                                    <li><a href="index.html">INGRESO</a></li>
+                                    <li><a href="inicio.html">INICIO</a></li>
+                                    <li><a href="productos.html">RECETAS</a></li>
+                                    <li><a href="acerca.html">ACERCA</a></li>
+                                </ul>        
+                            </nav>
+                            <i id="btn_menu" class="fas fa-bars" onclick="mostrar()"></i>
+                            <i id="btn_menu_ocultar" onclick="ocultar()">X</i>
+                        </div>
+            </header>
+            <main class="grid-main">
+                <div class="contenedor">
+                    <form action="https://formspree.io/f/xknalwgj" method="POST" class="form" id="form" autocomplete="off">
+                      <p class="form-titulo">Regístrate</p>
+                      <div class="form-input myname">
+                        <input type="text" id="myname">
+                        <label for="myname">Nombre</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-input surname">
+                        <input type="text" id="surname">
+                        <label for="surname">Apellidos</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-input email">
+                        <input type="email" id="email">
+                        <label for="email">Correo electrónico</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-input mobile">
+                        <input type="text" id="mobile">
+                        <label for="mobile">Celular</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-input password">
+                        <input type="password" id="password">
+                        <label for="password">Contraseña</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-input repeatPassword">
+                        <input type="password" id="repeatPassword">
+                        <label for="repeatPassword">Repetir Contraseña</label>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-termsAndConditions termsAndConditions">
+                        <input type="checkbox" id="termsAndConditions">
+                        <label for="termsAndConditions">He leído y acepto los </label>
+                        <a href="#">Términos y Condiciones</a>
+                        <p class="mensajeError"></p>
+                      </div>
+                      <div class="form-boton" >
+                        <input type="submit" value="Enviar">
+                      </div>
+                      <p class="mensajeCorrecto"></p>
+                    </form>
+                </div>
+            </main>
+            <aside class="grid-aside">
+                <div class="container-bar">
+                    <input type="checkbox" id="btn-social">
+                        <label for="btn-social" class="fa fa-play"></label>
+                            <div class="icon-social">
+                                <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank">
+                                    <span id="title">Facebook</span>
+                                </a>
+                                <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank">
+                                    <span id="title">Youtube</span>
+                                </a>
+                                <a href="https://twitter.com/" class="fa fa-twitter" target="_blank">
+                                    <span id="title">Twitter</span>
+                                </a>
+                                <a href="https://github.com/" class="fa fa-github" target="_blank">
+                                    <span id="title">Github</span>
+                                </a>
+                                <a href="https://ar.pinterest.com/" class="fa fa-pinterest" target="_blank">
+                                    <span id="title">Pinterest</span>
+                                </a>
+                            </div>
+                </div>
+            </aside>
+            <footer class="grid-footer">
+                <p>&copy; Todos los derechos reservados :: FM - Trabajo práctico Bootcamp Código Facilito :: Mayo 2023</p>
+            </footer>
+        </div>
+        <script src="./js/form.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

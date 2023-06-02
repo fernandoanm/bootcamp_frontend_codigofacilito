@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCOCKTAiL</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="grid-header">
+            <div class="header-fondo"></div>
+                    <div class="header-contenido">
+                        <img src="./img/logo.png" alt="e/COCKTAiL_logo" class="logo">
+                        <nav class="navbar" id="navbar">
+                            <ul>
+                                <li><a href="index.html">INGRESO</a></li>
+                                <li><a href="inicio.html">INICIO</a></li>
+                                <li><a href="productos.html">RECETAS</a></li>
+                                <li><a href="contacto.html">CONTACTO</a></li>
+                            </ul>        
+                        </nav>
+                        <i id="btn_menu" class="fas fa-bars" onclick="mostrar()"></i>
+                        <i id="btn_menu_ocultar" onclick="ocultar()">X</i>
+                    </div>
+        </header>
+        <main class="grid-main">
+            <div class="acerca">
+                <h5>Acerca de este sitio</h5>
+                <p>Este sitio web fue realizado con el único fin de dar cumplimiento a un Trabajo Práctico Integrador (TPI) que forma parte del programa "Bootcamp Frontend - Segunda edición" que dicta la plataforma de aprendizaje códigofacilito de manera virtual; el sitio y todas sus funcionalidades, su diseño y/o sus recursos son ficticios y fue creado únicamente con una finalidad académica/educativa y no pretende o persigue bajo ninguna circunstancia algún interes comercial o de difusión.</p>
+            </div>
+        </main>
+        <aside class="grid-aside">
+            <div class="container-bar">
+                <input type="checkbox" id="btn-social">
+                <label for="btn-social" class="fa fa-play"></label>
+                    <div class="icon-social">
+                        <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank">
+                            <span id="title">Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank">
+                            <span id="title">Youtube</span>
+                        </a>
+                        <a href="https://twitter.com/" class="fa fa-twitter" target="_blank">
+                            <span id="title">Twitter</span>
+                        </a>
+                        <a href="https://github.com/" class="fa fa-github" target="_blank">
+                            <span id="title">Github</span>
+                        </a>
+                        <a href="https://ar.pinterest.com/" class="fa fa-pinterest" target="_blank">
+                            <span id="title">Pinterest</span>
+                        </a>
+                    </div>
+                </div>
+        </aside>
+        <footer class="grid-footer">
+            <p>&copy; Todos los derechos reservados :: Trabajo práctico Bootcamp Código Facilito :: Mayo 2023</p>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

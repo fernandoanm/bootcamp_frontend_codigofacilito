@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e/COCKTAiL</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="grid-header">
+            <div class="header-fondo"></div>
+                    <div class="header-contenido">
+                        <img src="./img/logo.png" alt="e/COCKTAiL_logo" class="logo">
+                        <nav class="navbar" id="navbar">
+                            <ul>
+                                <li><a href="index.html">INGRESO</a></li>
+                                <li><a href="inicio.html">INICIO</a></li>
+                                <li><a href="contacto.html">CONTACTO</a></li>
+                                <li><a href="acerca.html">ACERCA</a></li>
+                            </ul>        
+                        </nav>
+                        <i id="btn_menu" class="fas fa-bars" onclick="mostrar()"></i>
+                        <i id="btn_menu_ocultar" onclick="ocultar()">X</i>
+                    </div>
+        </header>
+        <main class="grid-main">
+            <div class="tragos">
+                <h2>Las mejores recetas de cócteles</h2>
+                <br>
+                <br> 
+                <p>¡Bienvenido al sitio web de <span class="marca">eCOCKTAiL!</span> Si querés aprender como hacer tragos exquisitos has llegado al lugar indicado para lograrlo. Aquí aprenderás de la profesión del bartender, sus técnicas, los diferentes tipos de licores, y cómo hacer las mejores recetas de cócteles clásicos.</p>
+            </div>
+            <div class="elige">
+                <form>
+                    <label for="election" class="election"> Seleccione sus tragos por la letra de inicio de su nombre: 
+                        <br>
+                        <select id="election" class="election">
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                            <option value="e">E</option>
+                            <option value="f">F</option>
+                            <option value="g">G</option>
+                            <option value="h">H</option>
+                            <option value="i">I</option>
+                            <option value="j">J</option>
+                            <option value="k">K</option>
+                            <option value="l">L</option>
+                            <option value="m">M</option>
+                            <option value="n">N</option>
+                            <option value="o">O</option>
+                            <option value="p">P</option>
+                            <option value="q">Q</option>
+                            <option value="r">R</option>
+                            <option value="s">S</option>
+                            <option value="t">T</option>
+                            <option value="u">U</option>
+                            <option value="v">V</option>
+                            <option value="w">W</option>
+                            <option value="x">X</option>
+                            <option value="y">Y</option>
+                            <option value="z">Z</option>
+                        </select>
+                        <input type="button" value="Seleccionar" class="boton" onclick="update()">
+                    </label>    
+                </form>
+            </div>  
+            <div id="tarjetas">
+            </div>
+        </main>
+        <aside class="grid-aside">
+            <div class="container-bar">
+                <input type="checkbox" id="btn-social">
+                <label for="btn-social" class="fa fa-play"></label>
+                    <div class="icon-social">
+                        <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank">
+                            <span id="title">Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank">
+                            <span id="title">Youtube</span>
+                        </a>
+                        <a href="https://twitter.com/" class="fa fa-twitter" target="_blank">
+                            <span id="title">Twitter</span>
+                        </a>
+                        <a href="https://github.com/" class="fa fa-github" target="_blank">
+                            <span id="title">Github</span>
+                        </a>
+                        <a href="https://ar.pinterest.com/" class="fa fa-pinterest" target="_blank">
+                            <span id="title">Pinterest</span>
+                        </a>
+                    </div>
+                </div>
+        </aside>
+        <footer class="grid-footer">
+            <p>&copy; Todos los derechos reservados :: Trabajo práctico Bootcamp Código Facilito :: Mayo 2023</p>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+    </body>
+</html>
