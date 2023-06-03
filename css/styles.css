@@ -90,6 +90,11 @@ body {
 	height: 220px;
 }
 
+.item1 p {
+	font-size: .83em;	/*para igualarlo a item1 */
+}
+
+
 .item1 img {
 	height: 200px;
 	width: 300px;
@@ -117,13 +122,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.video1 {
-	min-width: 100%;
-	padding:20px;
-	background-color: rgb(53, 19, 19);
-	max-height: 200px;
 }
 
 .iframe1 {
@@ -219,6 +217,7 @@ body {
 	margin: 80px auto 10px;
 	padding: 40px 5px;
 	border: solid 2px rgb(184, 31, 31);
+	border-radius: 7px;
 }
 
 .acerca p {
@@ -227,6 +226,7 @@ body {
 	text-align: justify;
 	font-size: 1.1em;
 	color: rgb(105, 21, 105);
+	padding: 10px;
 }
 
 .acerca h5 {
@@ -600,7 +600,7 @@ body {
 	.grid-container {
 		min-height: 100vh;
 		display: grid;
-		grid-template-columns: 40px 1fr;
+		grid-template-columns: 35px 1fr;     /*nuevo*/
 		grid-template-rows: 95px 1fr 100px;
 		grid-template-areas: "header header"
 							 "aside main"
@@ -664,46 +664,77 @@ body {
     min-width: 50vw;
     padding: 10px 15px;
     margin: auto;
-    }
-
+	}
+	
 	/* agregado */
 	.contenido-main {
-		padding: 20px;
+		padding: 5px;  /*nuevo*/
 	}
 
+	.contenido-main p {
+		font-size: .83em;
+		min-width: 290px;		/*nuevo*/
+		max-width: 100%;
+		margin: auto;	
+		padding-right: 10px;		/*nuevo*/
+	}
+
+	.contenido-main h3 {
+		min-width: 300px;		/*nuevo*/
+		max-width: 100%;		/*nuevo*/
+		margin: 20px auto 0;	/*nuevo*/
+		font-size: .95em;		/*nuevo*/
+	}
+
+	.video {
+		padding: 10px;
+	}
+	
 	.container-bar {
-		max-width: 40px;
+		max-width: 35px;  /*nuevo*/
 	}
     
 	.container-bar a{
-		width: 40px;
+		width: 35px;		/*nuevo*/
 		height: 40px;
 	}
 
 	.item-container {
 		padding: 35px 5px; 
+		max-width: 100%;
+		min-width: 100%;  /*nuevo*/
+		margin: 2px;  /*nuevo*/
+	}
+
+	.item {
+		max-width: 100%;
+		min-width: 315px;
 	}
 
 	.item p {
-		max-width: 330px;
+		max-width: 300px;
 		font-size: .82em;
-		height: 200px;
+		height: 225px;
 		margin: auto;
+		padding: 6px;
 	}
 
 	.item img {
-		max-width: 330px;
+		min-width: 310px;
+		max-width: 310px;
+		margin: auto;
 	}
 
 	.resaltado-separador {
-		font-size: .9em;
+		font-size: .85em;   /*nuevo*/
 		height: auto;
+		min-width: 100%;
 		border-top: 1px solid gray;
 	}
 
 	.titulo-main {
-		font-size: 1.6em;
-		padding: 50px;
+		font-size: 1.5em;
+		padding: 45px;
 	}
 
 	.color {
@@ -714,7 +745,45 @@ body {
 		font-size: 1em;
 	}
 
-	.contenido-main p {
-		font-size: .85em;
+	.tragos {
+		padding: 15px;
+		max-width: 100%;
 	}
+
+	.tragos h2 {
+		font-size: 1.6em;
+	}
+
+	.tragos p {
+		font-size: .9em;
+		text-align: justify;
+	}
+
+	.election {
+		font-size: .9em;
+		padding: 0;
+
+	}
+
+	.container {
+		padding: 10px;
+		width: 100%;
+	}
+
+	.acerca {
+		max-width: 90%;
+		padding: 10px 3px;
+	}
+
+	.acerca p {
+		max-width: 80%;
+		padding: 10px;
+		font-size: .95em;
+	}
+
+	.acerca h5 {
+		font-size: 1em;
+		padding-bottom: 2px; 
+	}
+
 }
